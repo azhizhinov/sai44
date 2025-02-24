@@ -13,6 +13,8 @@ vcc and gnd to vcc and gnd
  
 If you want to have the Nice Nano face up, solder the pads on the bottom. For face down, solder the pads on top.
 
+Note that there may be underlying issues with this, I haven't seen any, but I am by no means an expert. Build at your own risk. (Though I had no personal issues when building this, aside from burning some Nice Nano clones.)
+
 Info from the reddit post:
 https://www.reddit.com/r/ErgoMechKeyboards/comments/1iv1ksa/sai44_a_katana_layout_wireless_split_using_zmk/
 
