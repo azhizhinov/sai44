@@ -1,0 +1,86 @@
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+#define DEF 0
+#define LWR 1
+#define RSE 2
+#define ADJ 3
+
+&lt { quick_tap_ms = <220>; };
+
+&mt { quick_tap_ms = <220>; };
+
+/ {
+};
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        layer_0 {
+            // ------------------------------------------------------------------------------------------------
+            //| LGUI/] |  Q  |  W  |  E  |  R  |  T  |               |  Y  |  U   |  I  |  O  |  P  | RGUI/[ | 
+            //| CTRL/` |  A  |  S  |  D  |  F  |  G  |               |  H  |  J   |  K  |  L  |  ;  | CTRL/' |
+            //| LALT/\ |  Z  |  X  |  C  |  V  |  B  |  B  |     | B |  N  |  M   |  ,  |  .  |  /  | RALT/- |
+            //                           | RSE | SPC | LWR |     | LWR | BKSP | RSE |
+
+            bindings = <
+&kp ESCAPE  &kp Q  &kp W  &kp E  &kp R      &kp T                             &kp Y  &kp U      &kp I      &kp O    &kp P     &kp BSLH
+&mo 1       &kp A  &kp S  &kp D  &kp F      &kp G                             &kp H  &kp J      &kp K      &kp L    &kp SEMI  &mt RCTRL SQT
+&kp LCTRL   &kp Z  &kp X  &kp C  &kp V      &kp B  &mo 3           &mo 3      &kp N  &kp M      &kp COMMA  &kp DOT  &kp FSLH  &mo 1
+                                 &kp SPACE  &mo 2  &kp LEFT_SHIFT  &kp SPACE  &mo 2  &kp RCTRL
+            >;
+        };
+
+        layer_1 {
+            // ------------------------------------------------------------------------------------------------
+            //| LGUI/] |  Q  |  W  |  E  |  R  |  T  |               |  Y  |  U   |  I  |  O  |  P  | RGUI/[ | 
+            //| CTRL/` |  A  |  S  |  D  |  F  |  G  |               |  H  |  J   |  K  |  L  |  ;  | CTRL/' |
+            //| LALT/\ |  Z  |  X  |  C  |  V  |  B  |  B  |     | B |  N  |  M   |  ,  |  .  |  /  | RALT/- |
+            //                           | RSE | SPC | LWR |     | LWR | BKSP | RSE |
+
+            bindings = <
+&kp GRAVE     &trans     &trans        &trans      &trans           &trans                                   &trans           &trans        &trans    &trans        &trans     &trans
+&kp CAPSLOCK  &kp LCTRL  &kp LEFT_ALT  &kp DELETE  &kp PRINTSCREEN  &kp G                                    &trans           &trans        &trans    &kp UP_ARROW  &trans     &trans
+&trans        &trans     &trans        &trans      &trans           &trans     &trans         &kp C_MUTE     &kp C_VOLUME_UP  &kp C_VOL_UP  &kp LEFT  &kp DOWN      &kp RIGHT  &trans
+                                                   &trans           &kp ENTER  &kp BACKSPACE  &kp BACKSPACE  &kp ENTER        &lt 2 DEL
+            >;
+        };
+
+        layer_2 {
+            // ------------------------------------------------------------------------------------------------
+            //| LGUI/] |  Q  |  W  |  E  |  R  |  T  |               |  Y  |  U   |  I  |  O  |  P  | RGUI/[ | 
+            //| CTRL/` |  A  |  S  |  D  |  F  |  G  |               |  H  |  J   |  K  |  L  |  ;  | CTRL/' |
+            //| LALT/\ |  Z  |  X  |  C  |  V  |  B  |  B  |     | B |  N  |  M   |  ,  |  .  |  /  | RALT/- |
+            //                           | RSE | SPC | LWR |     | LWR | BKSP | RSE |
+
+            bindings = <
+&trans    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                  &kp NUMBER_6  &kp N7  &kp N8  &kp N9  &kp N0  &trans
+&kp TAB   &trans        &trans        &trans        &trans        &trans                  &trans        &trans  &trans  &trans  &trans  &trans
+&kp LALT  &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans        &trans  &trans  &trans  &trans  &trans
+                                                    &trans        &trans  &trans  &trans  &trans        &trans
+            >;
+        };
+
+        layer_3 {
+            // ------------------------------------------------------------------------------------------------
+            //| LGUI/] |  Q  |  W  |  E  |  R  |  T  |               |  Y  |  U   |  I  |  O  |  P  | RGUI/[ | 
+            //| CTRL/` |  A  |  S  |  D  |  F  |  G  |               |  H  |  J   |  K  |  L  |  ;  | CTRL/' |
+            //| LALT/\ |  Z  |  X  |  C  |  V  |  B  |  B  |     | B |  N  |  M   |  ,  |  .  |  /  | RALT/- |
+            //                           | RSE | SPC | LWR |     | LWR | BKSP | RSE |
+
+            bindings = <
+&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                          &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
+&trans  &trans  &trans  &trans  &trans  &studio_unlock                  &trans  &trans  &trans  &trans  &trans   &kp F12
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans
+                                &trans  &trans          &trans  &trans  &trans  &trans
+            >;
+        };
+    };
+};

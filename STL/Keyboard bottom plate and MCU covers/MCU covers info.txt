@@ -1,0 +1,1 @@
+For the MCU cover, the V2 top, I printed it with no bottom or top layer, and the honeycomb infil.

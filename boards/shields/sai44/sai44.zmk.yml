@@ -1,0 +1,13 @@
+file_format: "1"
+id: sai44
+name: sai44
+type: shield
+url: NA
+requires: [nice_nano_v2]
+exposes: [i2c_oled]
+features:
+  - keys
+siblings:
+  - sai44_left
+  - sai44_right
+  - sai44_dongle

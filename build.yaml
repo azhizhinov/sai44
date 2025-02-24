@@ -1,0 +1,21 @@
+# This file generates the GitHub Actions matrix
+# For simple board + shield combinations, add them
+# to the top level board and shield arrays, for more
+# control, add individual board + shield combinations to
+# the `include` property, e.g:
+#
+---
+include:
+  - board: nice_nano_v2
+    shield: sai44_left
+    artifact-name: sai44_left
+  - board: nice_nano_v2
+    shield: sai44_right
+    artifact-name: sai44_right
+  - board: nice_nano_v2
+    shield: sai44_dongle dongle_display
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    artifact-name: sai44_dongle
+  - board: nice_nano_v2
+    shield: settings_reset

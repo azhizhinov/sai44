@@ -1,0 +1,10 @@
+ file_format: "1"
+id: sai44
+name: sai44
+type: shield
+url: https://github.com/leafflat/sai44-oleddisp-zmk_studio
+requires: [nice_nano_v2]
+features:
+  - keys
+  - zmk studio
+  - dongle display
