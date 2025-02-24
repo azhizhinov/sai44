@@ -7,7 +7,7 @@ ZMK firmware that is compatible with ZMK Studio.
 Split keyboard with Dongle.  
 Dongle has a display.  
   
-Display configuration:
+Display configuration:  
 sck to pin 20  
 sda to pin 17     
 vcc and gnd to vcc and gnd 
