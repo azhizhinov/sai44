@@ -11,6 +11,18 @@ Display configuration:
 sck to pin 20  
 sda to pin 17     
 vcc and gnd to vcc and gnd 
+
+You will need the following: 
+44 SOD123 Diodes.
+44 MX hotswaps.
+2 MSK12C02 switches
+2 TL3342 tactile switches
+a bunch of m2 4mm screws
+For the dongle:
+2 m3 counter sunk screws for the dongle
+2 M3 heat set inserts
+
+There are 3 holes on the bottom plates for 2.5mm m3 heatset inserts I put for future mounting if I ever decide to go that route. 
  
 If you want to have the Nice Nano face up, solder the pads on the bottom. For face down, solder the pads on top.
 
