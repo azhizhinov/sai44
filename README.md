@@ -1,3 +1,4 @@
+https://github.com/leafflat/Sai44/blob/main/imgs/20250221_154534.jpg
 ZMK firmware that should be compatible with ZMK Studio.  
 Split keyboard with Dongle.  
 Dongle has a display.  
