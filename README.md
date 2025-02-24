@@ -9,3 +9,4 @@ sck to pin 20
 sda to pin 17     
 vcc and gnd to vcc and gnd 
  
+If you want to have the Nice Nano face up, solder the pads on the bottom. For face down, solder the pads on top.
